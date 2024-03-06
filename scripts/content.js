@@ -80,7 +80,7 @@ window.addEventListener("mousemove", (event) => {
 const numberPattern = /\d+/g;
 
 image.onload = function () {
-  setInterval(animate, 500);
+  setInterval(animate, 200);
 };
 
 setInterval(() => {
