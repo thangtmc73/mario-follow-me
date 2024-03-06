@@ -1,0 +1,24 @@
+{
+  "name": "Mario! Follow me",
+  "description": "Add one Mario the web page",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["mario.png"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ]
+}
